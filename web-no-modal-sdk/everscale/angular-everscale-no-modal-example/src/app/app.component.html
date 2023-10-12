@@ -1,0 +1,49 @@
+<div class="content">
+	<h1 class="title">
+		<a target="_blank" href="http://web3auth.io/">Web3Auth</a> & Angular Everscale
+		Example
+	</h1>
+	<div class="setting">
+		<div *ngIf="isModalLoaded && loggedIn; else elseBlock" class="card-container">
+			<button class="card card-small" (click)="getUserInfo()">
+				Get User Info
+			</button>
+			<button class="card card-small" (click)="authenticateUser()">
+				Get ID Token
+			</button>
+			<button class="card card-small" (click)="getEverscaleAccount()">
+				Get Everscale Account
+			</button>
+			<button class="card card-small" (click)="getEverscaleAddress()">
+				Get Everscale Address
+			</button>
+			<button class="card card-small" (click)="getEverscaleBalance()">
+				Get Everscale Balance
+			</button>
+			<button class="card card-small" (click)="deployEverscaleAccount()">
+				Deploy Everscale Account
+			</button>
+			<button class="card card-small" (click)="deployEverscaleAccountFromGiver()">
+				Deploy Everscale Account from Giver
+			</button>
+			<button class="card card-small" (click)="sendEverscaleTransaction()">
+				Send 1 EVER to Giver
+			</button>
+			<button class="card card-small" (click)="logout()">Log Out</button>
+			<div class="console" id="console-ui">
+				<p class="code">Logged In</p>
+			</div>
+		</div>
+		<ng-template #elseBlock>
+			<div class="card-container">
+				<button class="card card-small" (click)="login()">Login</button>
+			</div>
+		</ng-template>
+	</div>
+	<footer class="footer">
+		<a href="https://github.com/Web3Auth/examples/tree/main/web-modal-sdk/everscale/angular-everscale-no-modal-example"
+			target="_blank" rel="noopener noreferrer">
+			Source code
+		</a>
+	</footer>
+</div>

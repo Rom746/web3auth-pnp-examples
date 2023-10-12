@@ -1,0 +1,35 @@
+{
+  "name": "vue-everscale-modal-example",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@eversdk/appkit": "^0.3.8",
+    "@eversdk/core": "^1.44.2",
+    "@eversdk/lib-web": "^1.44.2",
+    "@web3auth/base": "^6.1.7",
+    "@web3auth/modal": "^6.1.8",
+    "@web3auth/openlogin-adapter": "^6.1.7",
+    "copy-webpack-plugin": "^11.0.0",
+    "core-js": "^3.25.5",
+    "node-polyfill-webpack-plugin": "^2.0.1",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@typescript-eslint/parser": "^5.40.1",
+    "@vue/cli-plugin-babel": "~5.0.8",
+    "@vue/cli-plugin-eslint": "~5.0.8",
+    "@vue/cli-plugin-typescript": "~5.0.8",
+    "@vue/cli-service": "~5.0.8",
+    "@vue/eslint-config-typescript": "^11.0.2",
+    "eslint": "^8.25.0",
+    "eslint-plugin-vue": "^9.6.0",
+    "typescript": "~4.8.4",
+    "zlib-browserify": "^0.0.3"
+  }
+}
